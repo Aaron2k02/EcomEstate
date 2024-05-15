@@ -1,36 +1,36 @@
 export const listData = [
   {
     id: 1,
-    title: "A Great Apartment Next to the Beach!",
+    title: "A Great Apartment Next to the Park!",
     img: "https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     bedroom: 2,
     bathroom: 1,
     price: 1000,
-    address: "456 Park Avenue, London",
-    latitude: 51.5074,
-    longitude: -0.1278,
+    address: "123 Jalan Ampang, Kuala Lumpur",
+    latitude: 3.1579,
+    longitude: 101.7121
   },
   {
     id: 2,
-    title: "An Awesome Apartment Near the Park! Almost too good to be true!",
+    title: "An Awesome Apartment Near the Twin Towers! Almost too good to be true!",
     img: "https://images.pexels.com/photos/1428348/pexels-photo-1428348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     bedroom: 3,
     bathroom: 2,
     price: 1500,
-    address: "789 Oxford Street, London",
-    latitude: 52.4862,
-    longitude: -1.8904,
+    address: "456 Jalan P. Ramlee, Kuala Lumpur",
+    latitude: 3.1542,
+    longitude: 101.7083
   },
   {
     id: 3,
-    title: "A New Apartment in the City!",
+    title: "A New Apartment in the City Center!",
     img: "https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     bedroom: 1,
     bathroom: 1,
     price: 800,
-    address: "101 Baker Street, London",
-    latitude: 53.4808,
-    longitude: -2.2426,
+    address: "789 Jalan Sultan Ismail, Kuala Lumpur",
+    latitude: 3.1588,
+    longitude: 101.7053
   },
   {
     id: 4,
@@ -39,9 +39,9 @@ export const listData = [
     bedroom: 2,
     bathroom: 1,
     price: 1000,
-    address: "234 Kingsway, London,",
-    latitude: 53.8008,
-    longitude: -1.5491,
+    address: "1010 Jalan Bukit Bintang, Kuala Lumpur",
+    latitude: 3.1456,
+    longitude: 101.7100
   },
   {
     id: 5,
@@ -50,9 +50,9 @@ export const listData = [
     bedroom: 3,
     bathroom: 2,
     price: 1500,
-    address: "567 Victoria Road, London",
-    latitude: 53.4084,
-    longitude: -2.9916,
+    address: "1122 Jalan Tun Razak, Kuala Lumpur",
+    latitude: 3.1690,
+    longitude: 101.7079
   },
   {
     id: 6,
@@ -61,9 +61,9 @@ export const listData = [
     bedroom: 1,
     bathroom: 1,
     price: 800,
-    address: "890 Regent Street, London",
-    latitude: 54.9783,
-    longitude: -1.6174,
+    address: "1313 Jalan Imbi, Kuala Lumpur",
+    latitude: 3.1421,
+    longitude: 101.7106
   },
   {
     id: 7,
@@ -72,9 +72,9 @@ export const listData = [
     bedroom: 2,
     bathroom: 1,
     price: 1000,
-    address: "112 Piccadilly, London",
-    latitude: 53.3811,
-    longitude: -1.4701,
+    address: "1414 Jalan Raja Chulan, Kuala Lumpur",
+    latitude: 3.1508,
+    longitude: 101.7087
   },
   {
     id: 8,
@@ -83,10 +83,10 @@ export const listData = [
     bedroom: 3,
     bathroom: 2,
     price: 1500,
-    address: "8765 Main High Street, London",
-    latitude: 51.4545,
-    longitude: -2.5879,
-  },
+    address: "1515 Jalan Ampang Hilir, Kuala Lumpur",
+    latitude: 3.1583,
+    longitude: 101.7198
+  }
 ];
 
 export const singlePostData = {

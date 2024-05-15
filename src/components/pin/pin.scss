@@ -1,17 +1,32 @@
-.popupContainer{
+.popupContainer {
   display: flex;
+  flex-direction: column;
   gap: 20px;
+  // justify-content: center;
+  align-items: center;
 
-  img{
-    width: 64px;
-    height: 48px;
+  img {
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 5px;
   }
 
-  .textContainer{
+  .textContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    a {
+      font-size: 16px;
+    }
+
+    span {
+      font-size: 14px;
+    }
+
+    b {
+      font-size: 16px;
+    }
   }
 }
