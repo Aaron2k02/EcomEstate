@@ -91,8 +91,8 @@ export const listData = [
 
 export const singlePostData = {
   id: 1,
-  title: "Beautiful Apartment",
-  price: 1200,
+  title: "A Great Apartment Next to the Park!",
+  price: 1000,
   images: [
     "https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     "https://images.pexels.com/photos/1428348/pexels-photo-1428348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
@@ -102,10 +102,10 @@ export const singlePostData = {
   bedRooms: 2,
   bathroom: 1,
   size: 861,
-  latitude: 51.5074,
-  longitude: -0.1278,
-  city: "London",
-  address: "1234 Broadway St",
+  latitude: 3.1579,
+  longitude: 101.7121,
+  city: "Kuala Lumpur",
+  address: "123 Jalan Ampang, Kuala Lumpur",
   school: "250m away",
   bus: "100m away",
   restaurant: "50m away",

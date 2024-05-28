@@ -12,6 +12,7 @@ import Register from "./routes/register/register";
 import { listData } from "./lib/dummydata.js";
 import ProfileUpdatePage from "./routes/profileUpdatePage/profileUpdatePage.jsx";
 import NewPostPage from "./routes/newPostPage/newPostPage.jsx";
+import EditPostPage from "./routes/editPostPage/editPostPage.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -30,6 +31,10 @@ function App() {
         {
           path: "/:id",
           element: <SinglePage items={listData} />
+        },
+        {
+          path: "/:id/edit",
+          element: <EditPostPage items={listData} />
         },
         {
           path: "/profile",
