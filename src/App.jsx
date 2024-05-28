@@ -9,7 +9,9 @@ import SinglePage from "./routes/singlePage/singlePage";
 import ProfilePage from "./routes/profilePage/profilePage";
 import Login from "./routes/login/login";
 import Register from "./routes/register/register";
-import { listData } from "../../react-estate-ui/src/lib/dummydata";
+import { listData } from "./lib/dummydata.js";
+import ProfileUpdatePage from "./routes/profileUpdatePage/profileUpdatePage.jsx";
+import NewPostPage from "./routes/newPostPage/newPostPage.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -32,6 +34,14 @@ function App() {
         {
           path: "/profile",
           element: <ProfilePage />
+        },
+        {
+          path: "/profile/update",
+          element: <ProfileUpdatePage />
+        },
+        {
+          path: "/post/new",
+          element: <NewPostPage />
         },
         {
           path: "/login",

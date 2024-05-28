@@ -1,4 +1,5 @@
 import "./newPostPage.scss";
+import {Link} from "react-router-dom";
 
 function NewPostPage() {
   return (
@@ -9,38 +10,39 @@ function NewPostPage() {
           <form>
             <div className="item">
               <label htmlFor="title">Title</label>
-              <input id="title" name="title" type="text" />
+              <input id="title" name="title" type="text"/>
             </div>
             <div className="item">
               <label htmlFor="price">Price</label>
-              <input id="price" name="price" type="number" />
+              <input id="price" name="price" type="number"/>
             </div>
             <div className="item">
               <label htmlFor="address">Address</label>
-              <input id="address" name="address" type="text" />
+              <input id="address" name="address" type="text"/>
             </div>
             <div className="item description">
               <label htmlFor="desc">Description</label>
+              <textarea id="desc" name="desc" rows="20" cols="50"/>
             </div>
             <div className="item">
               <label htmlFor="city">City</label>
-              <input id="city" name="city" type="text" />
+              <input id="city" name="city" type="text"/>
             </div>
             <div className="item">
               <label htmlFor="bedroom">Bedroom Number</label>
-              <input min={1} id="bedroom" name="bedroom" type="number" />
+              <input min={1} id="bedroom" name="bedroom" type="number"/>
             </div>
             <div className="item">
               <label htmlFor="bathroom">Bathroom Number</label>
-              <input min={1} id="bathroom" name="bathroom" type="number" />
+              <input min={1} id="bathroom" name="bathroom" type="number"/>
             </div>
             <div className="item">
               <label htmlFor="latitude">Latitude</label>
-              <input id="latitude" name="latitude" type="text" />
+              <input id="latitude" name="latitude" type="text"/>
             </div>
             <div className="item">
               <label htmlFor="longitude">Longitude</label>
-              <input id="longitude" name="longitude" type="text" />
+              <input id="longitude" name="longitude" type="text"/>
             </div>
             <div className="item">
               <label htmlFor="type">Type</label>
@@ -78,33 +80,37 @@ function NewPostPage() {
             <div className="item">
               <label htmlFor="income">Income Policy</label>
               <input
-                id="income"
-                name="income"
-                type="text"
-                placeholder="Income Policy"
+                  id="income"
+                  name="income"
+                  type="text"
+                  placeholder="Income Policy"
               />
             </div>
             <div className="item">
               <label htmlFor="size">Total Size (sqft)</label>
-              <input min={0} id="size" name="size" type="number" />
+              <input min={0} id="size" name="size" type="number"/>
             </div>
             <div className="item">
               <label htmlFor="school">School</label>
-              <input min={0} id="school" name="school" type="number" />
+              <input min={0} id="school" name="school" type="number"/>
             </div>
             <div className="item">
               <label htmlFor="bus">bus</label>
-              <input min={0} id="bus" name="bus" type="number" />
+              <input min={0} id="bus" name="bus" type="number"/>
             </div>
             <div className="item">
               <label htmlFor="restaurant">Restaurant</label>
-              <input min={0} id="restaurant" name="restaurant" type="number" />
+              <input min={0} id="restaurant" name="restaurant" type="number"/>
             </div>
             <button className="sendButton">Add</button>
           </form>
         </div>
       </div>
-      <div className="sideContainer"></div>
+      <div className="sideContainer">
+        <img
+            src="https://images.pexels.com/photos/1918291/pexels-photo-1918291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="" className="avatar"/>
+      </div>
     </div>
   );
 }

@@ -52,6 +52,8 @@
           color: white;
           font-weight: bold;
           cursor: pointer;
+          height: 56px;
+          margin-top: 24px;
         }
       }
     }
@@ -67,8 +69,8 @@
     justify-content: center;
 
     img {
-      width: 50%;
-      height: 180px;
+      height: 100%;
+      width: 100%;
       object-fit: cover;
       border-radius: 5px;
     }

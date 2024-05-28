@@ -14,9 +14,7 @@ function Navbar() {
           <span>EcomEstate</span>
         </a>
         <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
-        <a href="/">Agents</a>
+        <a href="/list">Estate</a>
       </div>
       <div className="right">
         {user ? (
