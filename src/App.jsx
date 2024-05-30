@@ -20,6 +20,7 @@ import ProgressCircle from "./components/progressCircle/ProgressCircle.jsx";
 import StatBox from "./components/statBox/StatBox.jsx";
 import Dashboard from "./routes/analyticPage/AnalyticPage.jsx";
 
+import EditPostPage from "./routes/editPostPage/editPostPage.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -38,6 +39,10 @@ function App() {
         {
           path: "/:id",
           element: <SinglePage items={listData} />
+        },
+        {
+          path: "/:id/edit",
+          element: <EditPostPage items={listData} />
         },
         {
           path: "/profile",
