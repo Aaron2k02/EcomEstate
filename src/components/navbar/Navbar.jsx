@@ -1,12 +1,13 @@
 import { useState } from "react";
-import "./navbar.scss";
 import { Link } from "react-router-dom";
+import "./navbar.scss";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
 
   const user = {
-    username: "user",
+    username: "John Doe",
+    isAgent: false, // Set to true if the user is an agent
   };
 
   return (
@@ -18,7 +19,7 @@ function Navbar() {
         </a>
         <a href="/">Home</a>
         <a href="/list">Estate</a>
-        <a href="/Dashboard">Dashbord</a>
+        {user && user.isAgent && <a href="/dashboard">Dashboard</a>}
       </div>
       <div className="right">
         {user ? (
@@ -27,7 +28,7 @@ function Navbar() {
               src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
               alt=""
             />
-            <span>John Doe</span>
+            <span>{user.username}</span>
             <Link to="/profile" className="profile">
               <div className="notification">3</div>
               <span>Profile</span>
@@ -53,8 +54,12 @@ function Navbar() {
           <a href="/">About</a>
           <a href="/">Contact</a>
           <a href="/">Agents</a>
-          <a href="/">Sign in</a>
-          <a href="/">Sign up</a>
+          {!user && (
+            <>
+              <a href="/">Sign in</a>
+              <a href="/">Sign up</a>
+            </>
+          )}
         </div>
       </div>
     </nav>
