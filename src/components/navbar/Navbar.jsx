@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const user = true;
+  const user = {
+    username: "user",
+  };
+
   return (
     <nav>
       <div className="left">
@@ -15,6 +18,7 @@ function Navbar() {
         </a>
         <a href="/">Home</a>
         <a href="/list">Estate</a>
+        <a href="/Dashboard">Dashbord</a>
       </div>
       <div className="right">
         {user ? (

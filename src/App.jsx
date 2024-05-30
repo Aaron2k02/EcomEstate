@@ -12,6 +12,14 @@ import Register from "./routes/register/register";
 import { listData } from "./lib/dummydata.js";
 import ProfileUpdatePage from "./routes/profileUpdatePage/profileUpdatePage.jsx";
 import NewPostPage from "./routes/newPostPage/newPostPage.jsx";
+import BarChart from "./components/barChart/BarChart.jsx";
+import GeographyChart from "./components/geoChart/GeoChart.jsx";
+import LineChart from "./components/lineChart/LineChart.jsx";
+import PieChart from "./components/pieChart/PieChart.jsx";
+import ProgressCircle from "./components/progressCircle/ProgressCircle.jsx";
+import StatBox from "./components/statBox/StatBox.jsx";
+import Dashboard from "./routes/analyticPage/AnalyticPage.jsx";
+
 
 function App() {
   const router = createBrowserRouter([
@@ -50,7 +58,35 @@ function App() {
         {
           path: "/register",
           element: <Register />
-        }
+        },
+        {
+          path: "/barChart",
+          element: <BarChart />
+        },
+        {
+          path: "/geoChart",
+          element: <GeographyChart />
+        },
+        {
+          path: "/lineChart",
+          element: <LineChart />
+        },
+        {
+          path: "/pieChart",
+          element: <PieChart />
+        },
+        {
+          path: "/progressCircle",
+          element: <ProgressCircle />
+        },
+        {
+          path: "/statBox",
+          element: <StatBox />
+        },
+        {
+          path: "/dashboard",
+          element: <Dashboard />
+        },
       ]
     }
   ]);
