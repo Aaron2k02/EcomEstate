@@ -23,6 +23,8 @@ import Dashboard from "./routes/analyticPage/AnalyticPage.jsx";
 import EditPostPage from "./routes/editPostPage/editPostPage.jsx";
 import {UserProvider} from "./data/userContext.jsx";
 import CheckoutSuccess from "./components/checkoutSuccess/checkoutSuccess.jsx";
+import LandLordDashboard from "./routes/landLordDashboard/LandLordDashboard.jsx";
+import AgentsDashboard from "./routes/agentsDashboard/AgentsDashboard.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -97,6 +99,14 @@ function App() {
         {
           path: "/checkout-success",
           element: <CheckoutSuccess />
+        },
+        {
+          path: "/landLordDashboard",
+          element: <LandLordDashboard />
+        },
+        {
+          path: "/agentsDashboard",
+          element: <AgentsDashboard />
         },
       ]
     }

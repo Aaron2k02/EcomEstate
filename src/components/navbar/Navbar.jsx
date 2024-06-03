@@ -16,7 +16,8 @@ function Navbar() {
         </a>
         <a href="/">Home</a>
         <a href="/list">Estate</a>
-        {user && user.isAgent && <a href="/dashboard">Dashboard</a>}
+        {user && user.isAdmin && <a href="/dashboard">Dashboard</a>}
+        {user && user.isAgent && <a href="/landLordDashboard">Dashboard</a>}
       </div>
       <div className="right">
         {user ? (

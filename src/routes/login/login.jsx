@@ -9,13 +9,19 @@ function Login() {
     const handleSubmit = (event) => {
         const user = {
             username: "John Doe",
-            isAgent: false
+            isAgent: false,
+            isAdmin: false,
         };
         if (event.target[0].value == 'admin') {
-            user.username = 'admin'
-            user.isAgent = true;
+            user.username = 'admin',
+            user.isAgent = false,
+            user.isAdmin = true;
         }
-
+        if (event.target[0].value == 'agent') {
+            user.username = 'agent',
+                user.isAgent = true,
+                user.isAdmin = false;
+        }
         event.preventDefault();
         sessionStorage.setItem('user', JSON.stringify(user));
         setUser(user);
