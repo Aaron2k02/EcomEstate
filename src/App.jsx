@@ -22,6 +22,7 @@ import Dashboard from "./routes/analyticPage/AnalyticPage.jsx";
 
 import EditPostPage from "./routes/editPostPage/editPostPage.jsx";
 import {UserProvider} from "./data/userContext.jsx";
+import CheckoutSuccess from "./components/checkoutSuccess/checkoutSuccess.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -92,6 +93,10 @@ function App() {
         {
           path: "/dashboard",
           element: <Dashboard />
+        },
+        {
+          path: "/checkout-success",
+          element: <CheckoutSuccess />
         },
       ]
     }

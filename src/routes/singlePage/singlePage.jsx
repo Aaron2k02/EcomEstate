@@ -7,6 +7,21 @@ import RatingForm from "../../components/ratingForm/RatingForm";
 import ReviewItem from "../../components/reviewItem/ReviewItem";
 import { reviewData } from "../../data/reviewData";
 
+/** ----------------- MUQRI CODE ------------------------- */
+// import components
+import PayButton from "../../components/payButton/PayButton"
+
+
+// dummy data for the cartItems
+const cartItems = [
+  { id: 1, name: "Apartment 123 Jalan Ampang, Kuala Lumpur", price: 1000.00, cartQuantity: 1, image: "https://i.imgur.com/2xH1X44.png", desc: "A Great Apartment Next to the Park!" },
+];
+
+// Define the cart object
+const cart = { cartItems };
+
+/** ----------------- MUQRI CODE ------------------------- */
+
 function SinglePage() {
 
   const [seen, setSeen] = useState(false)
@@ -29,12 +44,12 @@ function SinglePage() {
                   <span>{singlePostData.address}</span>
                 </div>
                 <div className="price">$ {singlePostData.price}</div>
-                <button> Make Appointment </button>
+                {/* <button> Make Appointment </button> */}
+                <PayButton className='payButton' cartItems={cart.cartItems} />
               </div>
               <div className="user">
                 <img src={userData.img} alt="" />
                 <span>{userData.name}</span>
-                {/* <button> Book an Appointment </button> */}
               </div>
             </div>
             <div className="bottom">
