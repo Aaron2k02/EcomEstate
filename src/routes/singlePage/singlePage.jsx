@@ -29,10 +29,12 @@ function SinglePage() {
                   <span>{singlePostData.address}</span>
                 </div>
                 <div className="price">$ {singlePostData.price}</div>
+                <button> Make Appointment </button>
               </div>
               <div className="user">
                 <img src={userData.img} alt="" />
                 <span>{userData.name}</span>
+                {/* <button> Book an Appointment </button> */}
               </div>
             </div>
             <div className="bottom">
