@@ -21,6 +21,7 @@ import StatBox from "./components/statBox/StatBox.jsx";
 import Dashboard from "./routes/analyticPage/AnalyticPage.jsx";
 
 import EditPostPage from "./routes/editPostPage/editPostPage.jsx";
+import {UserProvider} from "./data/userContext.jsx";
 
 function App() {
   const router = createBrowserRouter([
@@ -97,8 +98,9 @@ function App() {
   ]);
 
   return (
-
-    <RouterProvider router={router} />
+      <UserProvider>
+        <RouterProvider router={router} />
+      </UserProvider>
   );
 }
 

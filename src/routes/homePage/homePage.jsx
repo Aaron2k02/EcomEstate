@@ -31,7 +31,7 @@ function HomePage() {
         </div>
       </div>
       <div className="imgContainer">
-        <img src="/bg.png" alt="" />
+        <img src="/bg.png" alt="" style={{top:50 + 'px'}}/>
       </div>
     </div>
   );

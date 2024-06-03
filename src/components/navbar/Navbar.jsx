@@ -1,14 +1,11 @@
-import { useState } from "react";
+import {useContext, useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import "./navbar.scss";
+import {UserContext} from "../../data/userContext.jsx";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-
-  const user = {
-    username: "John Doe",
-    isAgent: false, // Set to true if the user is an agent
-  };
+  const { user } = useContext(UserContext);
 
   return (
     <nav>
@@ -36,8 +33,8 @@ function Navbar() {
           </div>
         ) : (
           <>
-            <a href="/">Sign in</a>
-            <a href="/" className="register">
+            <a href="/login">Sign in</a>
+            <a href="/register" className="register">
               Sign up
             </a>
           </>
