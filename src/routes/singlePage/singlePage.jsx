@@ -33,21 +33,28 @@ function SinglePage() {
           <p className="title">General</p>
           <div className="listVertical">
             <div className="feature">
-              <img src="/utility.png" alt="" />
+              <img src="/category.png" alt=""/>
+              <div className="featureText">
+                <span>Category</span>
+                <p>Rent</p>
+              </div>
+            </div>
+            <div className="feature">
+              <img src="/utility.png" alt=""/>
               <div className="featureText">
                 <span>Utilities</span>
                 <p>Renter is responsible</p>
               </div>
             </div>
             <div className="feature">
-              <img src="/pet.png" alt="" />
+              <img src="/pet.png" alt=""/>
               <div className="featureText">
                 <span>Pet Policy</span>
                 <p>Pets Allowed</p>
               </div>
             </div>
             <div className="feature">
-              <img src="/fee.png" alt="" />
+              <img src="/fee.png" alt=""/>
               <div className="featureText">
                 <span>Property Fees</span>
                 <p>Must have 3x the rent in total household income</p>
@@ -57,7 +64,7 @@ function SinglePage() {
           <p className="title">Sizes</p>
           <div className="sizes">
             <div className="size">
-              <img src="/size.png" alt="" />
+              <img src="/size.png" alt=""/>
               <span>80 sqft</span>
             </div>
             <div className="size">

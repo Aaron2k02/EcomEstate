@@ -40,20 +40,24 @@ function Card({ item }) {
         </p>
         <p className="price">$ {item.price}</p>
         <div className="bottom">
-          <div className="features">
-            <div className="feature">
-              <img src="/bed.png" alt="" />
-              <span>{item.bedroom} bedroom</span>
+            <div className="features">
+                <div className="feature">
+                    <img src="/category.png" alt=""/>
+                    <span>{item.category}</span>
+                </div>
+                <div className="feature">
+                    <img src="/bed.png" alt=""/>
+                    <span>{item.bedroom} bedroom</span>
+                </div>
+                <div className="feature">
+                    <img src="/bath.png" alt=""/>
+                    <span>{item.bathroom} bathroom</span>
+                </div>
             </div>
-            <div className="feature">
-              <img src="/bath.png" alt="" />
-              <span>{item.bathroom} bathroom</span>
-            </div>
-          </div>
-          {renderIcon()}
+            {renderIcon()}
+        </div>
         </div>
       </div>
-    </div>
   );
 }
 
