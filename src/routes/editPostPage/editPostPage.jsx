@@ -103,7 +103,7 @@ function EditPostPage() {
               <label htmlFor="restaurant">Distant to restaurant(m)</label>
               <input min={0} id="restaurant" name="restaurant" type="number" value={50}/>
             </div>
-            <button className="sendButton">Add</button>
+            <button className="sendButton">Edit</button>
           </form>
         </div>
       </div>
