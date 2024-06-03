@@ -2,8 +2,19 @@ import "./singlePage.scss";
 import Slider from "../../components/slider/Slider";
 import Map from "../../components/map/Map";
 import { singlePostData, userData } from "../../lib/dummydata";
+import { useState } from 'react'
+import RatingForm from "../../components/ratingForm/RatingForm";
+import ReviewItem from "../../components/reviewItem/ReviewItem";
+import { reviewData } from "../../data/reviewData";
 
 function SinglePage() {
+
+  const [seen, setSeen] = useState(false)
+
+  function togglePop() {
+    setSeen(!seen);
+  }
+
   return (
     <div className="singlePage">
       <div className="details">
@@ -24,7 +35,19 @@ function SinglePage() {
                 <span>{userData.name}</span>
               </div>
             </div>
-            <div className="bottom">{singlePostData.description}</div>
+            <div className="bottom">
+              {singlePostData.description}
+              <div className="reviewHeader">
+                <h2>Reviews</h2>
+                <button onClick={togglePop} >Add Review</button>
+                  {seen ? <RatingForm toggle={togglePop} /> : null}
+                </div>
+              <div className="reviews">
+                {reviewData.map(review => (
+                  <ReviewItem key={review.id} review={review} />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
